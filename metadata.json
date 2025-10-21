@@ -1,0 +1,5 @@
+{
+  "name": "AI Ảnh Ghép NanoBanana",
+  "description": "Một ứng dụng AI sử dụng NanoBanana (gemini-2.5-flash-image-preview) để kết hợp ảnh nhân vật và sản phẩm, tạo ra một bức ảnh ghép chân thực và tự nhiên.",
+  "requestFramePermissions": []
+}
