@@ -6,7 +6,9 @@ if (!process.env.API_KEY) {
   throw new Error("API_KEY environment variable not set");
 }
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY,
+});
 
 const PROMPT = `You are an expert photo editor. Take the first image of a person and the second image of a product. Create a new, single, photorealistic image where the person is naturally interacting with the product. The final output must be seamless, with realistic lighting, shadows, perspective, and scale. The background should be cohesive and believable. Only output the final image.`;
 
